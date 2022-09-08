@@ -17,6 +17,14 @@ public class PairCoding{
             System.out.println("Not Prime Number");
         }
     }
+
+    public void table(){
+        System.out.print("Enter a number: ");
+        int num=sc.nextInt();
+        for(int i=1;i<=10;i++){
+            System.out.println(num+" x "+i+" = "+num*i);
+        }
+    }
     
     public static void main(String[] args) {
         PairCoding pc = new PairCoding();
@@ -25,6 +33,10 @@ public class PairCoding{
         switch(choice){
             case 1:
             pc.primeNumber();
+            break;
+
+            case 2:
+            pc.table();
             break;
 
             default:
