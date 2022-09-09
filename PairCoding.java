@@ -28,6 +28,9 @@ public class PairCoding{
     
     public static void main(String[] args) {
         PairCoding pc = new PairCoding();
+        int t;
+        do
+        {
         System.out.println("Enter:\n1- Prime Number\n2- Multiplication Table");
         int choice = pc.sc.nextInt();
         switch(choice){
@@ -42,5 +45,8 @@ public class PairCoding{
             default:
             System.out.println("Wrong Choice");
         }
-    }
+            System.out.println("If you want to continue enter 1 or enter 0 for exit");
+             t = pc.sc.nextInt();
+    }while(t==1); 
+}
 }
